@@ -5,8 +5,20 @@ body{
 
 }
 
-.nav-item{
-    margin: auto;
+#carouselExampleAutoplaying .carousel-item{
+    object-fit: cover;
+    object-position: center;
+    height: 40vw;
 }
 
+.contenedor-barra-negra{
+    height: 5vw;
+}
 
+.contenedor-titulo{
+    height: 10vw;
+}
+
+.contenedor-categorias{
+    height: 20vw;
+}

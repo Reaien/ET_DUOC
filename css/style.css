@@ -8,9 +8,11 @@ body{
 #carouselExampleAutoplaying .carousel-item{
     object-fit: cover;
     object-position: center;
-    height: 40vw;
+    height: 30vw;
 }
-
+.carousel-inner{
+    height: 30vw;
+}
 .contenedor-barra-negra{
     height: 5vw;
 }

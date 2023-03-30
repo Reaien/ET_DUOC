@@ -22,3 +22,11 @@ body{
 .contenedor-categorias{
     height: 20vw;
 }
+
+.navbar{
+    z-index: 1;
+}
+.carousel-caption{
+    font-family: 'Exo 2', sans-serif;
+    text-shadow: 0 0 10px #FF0000, 0 0 10px #0000FF;
+}

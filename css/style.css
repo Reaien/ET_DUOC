@@ -4,7 +4,6 @@ body{
     background: linear-gradient(to right, #7AA1D2, #e6da98, #CC95C0); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 
 }
-
 #carouselExampleAutoplaying .carousel-item{
     object-fit: cover;
     object-position: center;
@@ -16,19 +15,33 @@ body{
 .contenedor-barra-negra{
     height: 5vw;
 }
-
 .contenedor-titulo{
     height: 10vw;
 }
-
 .contenedor-categorias{
     height: 20vw;
 }
-
 .navbar{
     z-index: 1;
 }
 .carousel-caption{
     font-family: 'Exo 2', sans-serif;
     text-shadow: 0 0 10px #FF0000, 0 0 10px #0000FF;
+}
+.boton-categoria button{
+    transition: .3s;
+}
+.boton-categoria button:hover{
+    transform: scale(1.05);
+}
+.card-body img{
+    object-fit: cover;
+    object-position: center;
+    height: 20vw;
+}
+.card img{
+    transition: .3s;
+}
+.card img:hover{
+    transform: scale(1.05);
 }

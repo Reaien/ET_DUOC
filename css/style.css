@@ -49,7 +49,7 @@ body{
     #fila-cards{
         justify-content: center;
     }
-    #imagen-card{
+    .card-body img{
         height: 50%;
     }
 }

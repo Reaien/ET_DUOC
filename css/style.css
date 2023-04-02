@@ -9,9 +9,20 @@ body{
     object-position: center;
     height: 30vw;
 }
-.carousel-inner{
-    height: 30vw;
+
+
+#carouselExampleAutoplaying .carousel-caption{
+    font-size: 1.9rem;
 }
+
+
+@media (max-width: 600px){
+#carouselExampleAutoplaying .carousel-caption{
+    height: 26vw;
+    font-size: 1.2rem;
+    }
+}
+
 .contenedor-barra-negra{
     height: 5vw;
 }
@@ -52,4 +63,11 @@ body{
     .card-body img{
         height: 50%;
     }
+}
+
+.card-body button{
+    transition: .3s;
+}
+.card-body button:hover{
+    transform: scale(1.2);
 }

@@ -71,3 +71,23 @@ body{
 .card-body button:hover{
     transform: scale(1.2);
 }
+
+@media (max-width: 404px){
+    .navbar p{
+        width: 0.5rem;
+        padding-right: 6rem;
+    }
+    .texto-gato img{
+        height: 3rem;
+    }
+}
+
+
+@media (max-width: 475px){
+    .navbar p{
+        width: 0.5rem;
+    }
+    .texto-gato img{
+        height: 3rem;
+    }
+}

@@ -1,7 +1,6 @@
 /*background*/
 body{
-    background-image: url(/img/bg2-comic.png);
-    background-repeat: none;
+    background-image: url('../img/bg2-comic.png');
     background-position: center;
 
 }

@@ -1,9 +1,12 @@
+/*background*/
 body{
-    background: #CC95C0;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #7AA1D2, #DBD4B4, #CC95C0);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #7AA1D2, #e6da98, #CC95C0); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background-image: url(/img/bg2-comic.png);
+    background-repeat: none;
+    background-position: center;
 
 }
+
+/*imagenes y responsitvity carrusel*/
 #carouselExampleAutoplaying .carousel-item{
     object-fit: cover;
     object-position: center;
@@ -22,6 +25,7 @@ body{
     font-size: 1.2rem;
     }
 }
+/*fin imagenes y responsitvity carrusel*/
 
 .contenedor-barra-negra{
     height: 5vw;
@@ -35,6 +39,8 @@ body{
 .navbar{
     z-index: 1;
 }
+
+/*caption carrusel*/
 .carousel-caption{
     font-family: 'Exo 2', sans-serif;
     text-shadow: 0 0 10px #FF0000, 0 0 10px #0000FF;
@@ -45,6 +51,10 @@ body{
 .boton-categoria button:hover{
     transform: scale(1.05);
 }
+/*fin caption carrusel*/
+
+
+/*ajustes cards productos*/
 .card-body img{
     object-fit: cover;
     object-position: center;
@@ -71,23 +81,19 @@ body{
 .card-body button:hover{
     transform: scale(1.2);
 }
+/*fin cards*/
 
-@media (max-width: 420px){
+
+/* Mediaquerys para no romper responsivity navbar y logo */
+@media (max-width:784px){
     .navbar p{
-        width: 0.5rem;
-        padding-right: 6rem;
-    }
-    .texto-gato img{
-        height: 3rem;
+        font-size: 95%;
     }
 }
 
-
-@media (max-width: 475px){
-    .navbar p{
-        width: 0.5rem;
-    }
-    .texto-gato img{
-        height: 3rem;
+@media (min-width:800){
+    #textologo p{
+        font-size: 100%;
     }
 }
+/*fin navbar*/

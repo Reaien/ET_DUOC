@@ -2,6 +2,7 @@
 body{
     background-image: url('../img/bg-comic.png');
     background-position: center;
+    background-repeat: no-repeat;
 
 }
 

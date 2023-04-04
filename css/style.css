@@ -45,6 +45,13 @@ body{
 .boton-categoria button:hover{
     transform: scale(1.05);
 }
+
+.boton-categoria a{
+    transition: .3s;
+}
+.boton-categoria a:hover{
+    transform: scale(1.05);
+}
 /*fin caption carrusel*/
 
 

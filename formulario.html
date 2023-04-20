@@ -84,32 +84,45 @@
 
     <section id="login-web" class="m-5 d-flex justify-content-center align-items-center ">
         <div class="bg-secondary bg-opacity-25 p-5 rounded-5">
-            <div class="d-flex justify-content-center">
-                <div>
-                    <img src="img/icono-login.png" alt="login-user">
+          <div>
+            <form class="formulario" id="formulario" action="" enctype="multipart/form-data" method="get">
+              <div id="grupo__rut" class="m-2 form-group">
+                <label class="form-label formulario__label" for="rut">Rut:</label>
+                <div class="formulario__grupo-input">
+                  <input class="form-control formulario__input" type="text" name="rut" id="rut" placeholder="Ingrese su rut con . y - ">
                 </div>
-            </div>
-            <div class="text-center fs-3 fw-bold">Login</div>
-            <div>
-                <input class="form-control mb-2" type="text" placeholder="Nombre de usuario">
-            </div>
-            <div>
-                <input class="form-control mb-3" type="password" placeholder="Contraseña">
-            </div>
-            <div class="d-flex justify-content-around ">
-                <div class="d-flex align-items-center">
-                    <input type="checkbox">
-                    <div>Recuerdame</div>
-                </div>
-            </div>
-            <div>
-                <a class="text-decoration-none fw-semibold fst-italic text-muted" href="#">Olvidaste tu contraseña?</a>
-            </div>
-            <div>
-                <button type="button" class="btn btn-primary btn-dark w-100 " data-bs-toggle="modal" data-bs-target="#exampleModal">Conectar</button>
-            </div>
+                <p class="formulario__input-error">Rut incompleto debe tener . y - </p>
+              </div>
+              <div class="m-2 form-group">
+                <label class="form-label" for="nombre">Nombre:</label>
+                <input class="form-control" type="text" name="nombre" id="nombre" placeholder="Ingrese su nombre">
+              </div>
+              <div class="m-2 form-group">
+                <label class="form-label" for="apellidop">Apellido paterno:</label>
+                <input class="form-control" type="text" name="apellidop" id="apellidop" placeholder="Ingrese su apellido paterno">
+              </div>
+              <div class="m-2 form-group">
+                <label class="form-label" for="apellidom">Apellido materno:</label>
+                <input class="form-control" type="text" name="apellidom" id="apellidom" placeholder="Ingrese su apellido materno">
+              </div>
+              <div class="m-2 form-group">
+                <label class="form-label" for="edad">Edad:</label>
+                <input class="form-control" type="number" name="edad" id="edad" placeholder="Ingrese su edad">
+              </div>
+              <div class="m-2 form-group">
+                <label class="form-label" for="genero">Genero</label>
+                <select class="form-select" name="genero" id="genero">
+                  <option selected>Seleccione su genero</option>
+                  <option value="1">Femenino</option>
+                  <option value="2">Masculino</option>
+                </select>
+              </div>
+            </form>
+            <button type="submit" onclick="return validarFormulario()" class="btn btn-primary btn-dark mt-3 w-100">Enviar</button>
+            <button type="button" class="btn btn-primary mt-3 w-100">Crear carta</button>
+          </div>
         </div>
-    </section>
+      </section>
 
     <!--Fin login-->
 
@@ -167,6 +180,7 @@
   
   
       <!--Script-->
+      <script src="js/script.js"></script>
       <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
   </body>

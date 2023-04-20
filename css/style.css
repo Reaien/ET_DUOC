@@ -156,3 +156,34 @@ body{
 
 }
 
+/*mostrar error*/
+.formulario__input-error{
+    display: none;
+}
+
+.formulario__input-error--activo{
+    display: block;
+}
+
+/* Estilos para validacion*/
+
+.formulario__grupo-correcto 
+.formulario__label{
+    color: #1ed12d;
+}
+
+.formulario__grupo-incorrecto .formulario__label {
+    color: red;
+}
+
+.formulario__grupo-incorrecto .formulario__label {
+    color: #1ed12d;
+}
+
+.formulario__grupo-incorrecto .formulario__input{
+    border: 3px solid red;
+}
+
+.formulario__grupo-correcto .formulario__input{
+    border: 3px solid #1ed12d;
+}

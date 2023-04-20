@@ -19,26 +19,26 @@ const expresiones = {
 
 const validarFormulario = (e) => {
     switch (e.target.name) {
-        case rut:
+        case "rut":
             if (expresiones.rut.test(e.target.value)) {
-                
+                document.getElementById('grupo__rut').classList.remove('formulario__grupo-incorrecto');document.getElementById('grupo__rut').classList.add('formulario__grupo-correcto');
             }else{
                 document.getElementById('grupo__rut').classList.add('formulario__grupo-incorrecto');
             }
             break;
-        case nombre:
+        case "nombre":
             
             break;
-        case apellidop:
+        case "apellidop":
             
             break;
-        case apellidom:
+        case "apellidom":
             
             break;
-        case edad:
+        case "edad":
             
             break;
-        case genero:
+        case "genero":
             
             break;
     

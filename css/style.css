@@ -176,9 +176,6 @@ body{
     color: red;
 }
 
-.formulario__grupo-incorrecto .formulario__label {
-    color: #1ed12d;
-}
 
 .formulario__grupo-incorrecto .formulario__input{
     border: 3px solid red;

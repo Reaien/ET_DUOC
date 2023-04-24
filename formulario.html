@@ -89,33 +89,47 @@
               <div id="grupo__rut" class="m-2 form-group">
                 <label class="form-label formulario__label" for="rut">Rut:</label>
                 <div class="formulario__grupo-input">
-                  <input class="form-control formulario__input" type="text" name="rut" id="rut" placeholder="Ingrese su rut con . y - ">
+                  <input class="form-control formulario__input" type="text" name="rut" id="rut" placeholder="Ingrese su rut">
                 </div>
                 <p class="formulario__input-error">Rut incompleto debe tener . y - </p>
               </div>
-              <div class="m-2 form-group">
-                <label class="form-label" for="nombre">Nombre:</label>
-                <input class="form-control" type="text" name="nombre" id="nombre" placeholder="Ingrese su nombre">
+              <div id="grupo__name" class="m-2 form-group">
+                <label class="form-label formulario__label" for="nombre">Nombre:</label>
+                <div class="formulario__grupo-input">
+                  <input class="form-control formulario__input" type="text" name="nombre" id="nombre" placeholder="Ingrese su nombre">
+                </div>
+                <p class="formulario__input-error">Rellene su nombre</p>
               </div>
-              <div class="m-2 form-group">
-                <label class="form-label" for="apellidop">Apellido paterno:</label>
-                <input class="form-control" type="text" name="apellidop" id="apellidop" placeholder="Ingrese su apellido paterno">
+              <div id="grupo__appaterno" class="m-2 form-group">
+                <label class="form-label formulario__label " for="apellidop">Apellido paterno:</label>
+                <div class="formulario__grupo-input">
+                  <input class="form-control formulario__input" type="text" name="apellidop" id="apellidop" placeholder="Ingrese su apellido paterno">
+                </div>
+                <p class="formulario__input-error">Rellene su apellido paterno</p>
               </div>
-              <div class="m-2 form-group">
-                <label class="form-label" for="apellidom">Apellido materno:</label>
-                <input class="form-control" type="text" name="apellidom" id="apellidom" placeholder="Ingrese su apellido materno">
+              <div id="grupo__apmaterno" class="m-2 form-group">
+                <label class="form-label formulario__label" for="apellidom">Apellido materno:</label>
+                <div class="formulario__grupo-input">
+                  <input class="form-control formulario__input" type="text" name="apellidom" id="apellidom" placeholder="Ingrese su apellido materno">
+                </div>
+                <p class="formulario__input-error">Rellene apellido materno</p>
               </div>
-              <div class="m-2 form-group">
-                <label class="form-label" for="edad">Edad:</label>
-                <input class="form-control" type="number" name="edad" id="edad" placeholder="Ingrese su edad">
+              <div id="grupo__edad" class="m-2 form-group">
+                <label class="form-label formulario__label" for="edad">Edad:</label>
+                <div class="formulario__grupo-input">
+                  <input class="form-control formulario__input" type="number" min="0" max="99" name="edad" id="edad" placeholder="Ingrese su edad">
+                </div>
+                <p class="formulario__input-error">Rellene su edad 0 - 99</p>
               </div>
-              <div class="m-2 form-group">
-                <label class="form-label" for="genero">Genero</label>
-                <select class="form-select" name="genero" id="genero">
-                  <option selected>Seleccione su genero</option>
-                  <option value="1">Femenino</option>
-                  <option value="2">Masculino</option>
-                </select>
+              <div id="grupo__genero" class="m-2 form-group">
+                <label class="form-label formulario__label" for="genero">Genero</label>
+                <div class="formulario__grupo-input">
+                  <select class="form-select formulario__input" name="genero" id="genero">
+                    <option selected value="1">-</option>
+                    <option value="2">Femenino</option>
+                    <option value="3">Masculino</option>
+                  </select>
+                </div>
               </div>
             </form>
             <button type="submit"" class="btn btn-primary btn-dark mt-3 w-100">Enviar</button>

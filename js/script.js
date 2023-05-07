@@ -13,7 +13,7 @@ const selects = document.querySelectorAll("#formulario select")
 const expresiones = {
 	rut: /^[0-9\_\-\.]{11,12}$/, // Letras, numeros, guion y guion_bajo
 	nombre: /^[a-zA-ZÀ-ÿ\s]{4,25}$/, // Letras y espacios, pueden llevar acentos.
-	password: /^[0-9\_\-\.\a-zA-ZÀ-ÿ\s]{4,12}$/, // 4 a 12 alfanumericos.
+	password: /^[0-9\_\-\.]{8,12}$/, // 4 a 12 alfanumericos.
 	correo: /^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$/,
     edad: /^\d{1,2}$/, // 1 a 2 digitos.
     genero: /^[a-zA-ZÀ-ÿ\s]{2,6}$/ // caracteres de genero
